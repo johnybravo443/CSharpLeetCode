@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3571FA6-4F97-436A-8F73-0862AE163492}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>seriesone</RootNamespace>
+    <AssemblyName>seriesone</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayTest\2DArray.cs" />
+    <Compile Include="ArrayTest\Easy\CountGoodTriplets.cs" />
+    <Compile Include="ArrayTest\Easy\DesignAnOrderedStream.cs" />
+    <Compile Include="ArrayTest\Easy\FindNumbersWithEvenNumbersOfDigit.cs" />
+    <Compile Include="ArrayTest\Easy\FindTheHighestAltitide.cs" />
+    <Compile Include="ArrayTest\Easy\FlippingAnImage.cs" />
+    <Compile Include="ArrayTest\Easy\HighFiveMedium.cs" />
+    <Compile Include="ArrayTest\Easy\MatrixDiagnolSum.cs" />
+    <Compile Include="ArrayTest\Easy\MinTimeVisitingAllPoints.cs" />
+    <Compile Include="ArrayTest\Easy\SumOfAllOddLengthSubArrays.cs" />
+    <Compile Include="ArrayTest\Medium\ArrayCustom.cs" />
+    <Compile Include="ArrayTest\ArrayTest.cs" />
+    <Compile Include="ArrayTest\Medium\CreateTargetArrayInTheGivenOrder.cs" />
+    <Compile Include="ArrayTest\Easy\DecompressRunLengthEncodedList.cs" />
+    <Compile Include="ArrayTest\Easy\GreatestWealth.cs" />
+    <Compile Include="ArrayTest\Easy\KidsWithGreatestNoOfCandies.cs" />
+    <Compile Include="ArrayTest\ListPractice.cs" />
+    <Compile Include="ArrayTest\Easy\NoOfGoodPairs.cs" />
+    <Compile Include="ArrayTest\Easy\RunningSumOf1DArray.cs" />
+    <Compile Include="ArrayTest\Easy\ShuffleTheArray.cs" />
+    <Compile Include="ArrayTest\Easy\SmallerNoThanTheCurrentNo.cs" />
+    <Compile Include="ArrayTest\Easy\XOROperationInArray.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\AllWaysWeCanChooseKIntegerFromArray.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\PrintAllWordsInAString.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\WordBreak.cs" />
+    <Compile Include="DynamicProgramming\BottomUpTabulation\BionomialCoefficientDPBottomUp.cs" />
+    <Compile Include="DynamicProgramming\BottomUpTabulation\FibonacciBottomUp.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\CandidateNumSumtoTarget.cs" />
+    <Compile Include="DynamicProgramming\Recursion\BionomialCoefficientRecursive.cs" />
+    <Compile Include="DynamicProgramming\Recursion\ElementInSeqInArray.cs" />
+    <Compile Include="DynamicProgramming\Recursion\FibonacciRecursive.cs" />
+    <Compile Include="DynamicProgramming\Recursion\FindMaxNumberInArrayUsingRecursion.cs" />
+    <Compile Include="DynamicProgramming\Recursion\PalindromeUsingRec.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\PrintAllAnagramOfAString.cs" />
+    <Compile Include="DynamicProgramming\Backtracking\PrintAllPermutationOfGivenArray.cs" />
+    <Compile Include="DynamicProgramming\Recursion\SumOfDigitsOfANum.cs" />
+    <Compile Include="DynamicProgramming\TopDownMemorizationApproach\BionomialCoefficientDPTopDown.cs" />
+    <Compile Include="DynamicProgramming\TopDownMemorizationApproach\FibonacciTopDown.cs" />
+    <Compile Include="HashTableTest\CountPairsWithDiffK.cs" />
+    <Compile Include="HashTableTest\FirstNonRepeatedChar.cs" />
+    <Compile Include="HashSetTest\FirstRepeatedChar.cs" />
+    <Compile Include="HashTableTest\ImplementHashTable.cs" />
+    <Compile Include="HashTableTest\MostRepeatedEleInArrOfInt.cs" />
+    <Compile Include="HashTableTest\TwoSumTest.cs" />
+    <Compile Include="LinkedListTest\CreateLinkedList.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchingAlgo\BinarySearchIterative.cs" />
+    <Compile Include="SearchingAlgo\BinarySearchRec.cs" />
+    <Compile Include="SearchingAlgo\ExponentialSearch.cs" />
+    <Compile Include="SearchingAlgo\LinearSearch.cs" />
+    <Compile Include="SearchingAlgo\TernarySearchIte.cs" />
+    <Compile Include="SearchingAlgo\TernarySearchRec.cs" />
+    <Compile Include="SortingAlgo\BubbleSort.cs" />
+    <Compile Include="SortingAlgo\InsertionSort.cs" />
+    <Compile Include="SortingAlgo\MergeSort.cs" />
+    <Compile Include="SortingAlgo\QuickSort.cs" />
+    <Compile Include="SortingAlgo\SelectionSort.cs" />
+    <Compile Include="StackTest\CheckBalance.cs" />
+    <Compile Include="StackTest\ReverseAString.cs" />
+    <Compile Include="StringsTest\Anagram.cs" />
+    <Compile Include="StringsTest\CapFirstCharOfEachWordAndRepExtSpaces.cs" />
+    <Compile Include="StringsTest\CheckAStringIsRotationOfAnotherString.cs" />
+    <Compile Include="StringsTest\FindMostRepeatedCharInString.cs" />
+    <Compile Include="StringsTest\Palindrome.cs" />
+    <Compile Include="StringsTest\RemoveDupCharFromString.cs" />
+    <Compile Include="StringsTest\RemoveDupCharInString.cs" />
+    <Compile Include="StringsTest\ReverseAString.cs" />
+    <Compile Include="StringsTest\ReverseOrderOfWordsInSentence.cs" />
+    <Compile Include="StringsTest\Vowel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="General\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
